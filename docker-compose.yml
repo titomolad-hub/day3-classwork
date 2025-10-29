@@ -15,10 +15,10 @@ services:
   backend:
     build: ./backend
     environment:
-    POSTGRES_HOST: db
-    POSTGRES_DB: nimcdb
-    POSTGRES_USER: nimcuser
-    POSTGRES_PASSWORD: mypassword
+      POSTGRES_HOST: db
+      POSTGRES_DB: nimcdb
+      POSTGRES_USER: nimcuser
+      POSTGRES_PASSWORD: mypassword
     ports:
       - "5000:5000"
     depends_on:
