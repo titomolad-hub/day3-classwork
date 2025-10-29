@@ -2,7 +2,7 @@
 services:
 #Database Service
   db:
-    image: postgres:15-alphine
+    image: postgres:15-alpine
     environment:
       POSTGRES_USER: nimcuser
       POSTGRES_PASSWORD: mypassword
