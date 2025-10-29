@@ -8,7 +8,7 @@ services:
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: nimcdb
     ports:
-      - "5432:5432"
+      - "5431:5431"
     volumes:
       - ./database/db-init.sql:/docker-entrypoint-initdb.d/init.sql
 #Backend Service
@@ -16,7 +16,7 @@ services:
     build: ./backend
     environment:
       POSTGRES_DB_HOST: db
-      POSTGRES_DB_PORT: 5432
+      POSTGRES_DB_PORT: 5431
       POSTGRES_DB_NAME: nimcdb
       POSTGRES_USER: nimcuser
       POSTGRES_PASSWORD: mypassword
